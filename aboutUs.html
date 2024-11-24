@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mtaani Homes | About Us</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+
+        /* Header styles (keeping consistent with your index.html) */
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: white;
+        }
+
+        .header img {
+            width: 150px;
+            height: 100px;
+            margin-right: 20px;
+        }
+
+        nav {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            padding: 10px 60px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+            color: white;
+            border-color: #ffcc00;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* About Us Page Specific Styles */
+        .about-hero {
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(modernbuilding.jpg);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .about-hero h1 {
+            font-size: 3em;
+            margin-bottom: 30px;
+        }
+
+        .about-content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .mission-vision {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .mission, .vision {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .team-section {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .team-member {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .values-section {
+            background-color: white;
+            padding: 40px 20px;
+            margin: 40px 0;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .value-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav a {
+                padding: 10px 20px;
+                margin: 5px 0;
+            }
+
+            .mission-vision {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <img src="class project logo.png" alt="Mtaani Homes Logo" title="Mtaani Homes">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="about-hero">
+        <h1>About Mtaani Homes</h1>
+        <p>Building Communities, Creating Futures</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="about-content">
+        <h2>Our Story</h2>
+        <p>Mtaani Homes was founded with a vision to revolutionize the real estate industry in Kenya. Since our inception, we have been committed to providing innovative housing solutions that meet the evolving needs of modern families and professionals.</p>
+        
+        <!-- Mission and Vision -->
+        <div class="mission-vision">
+            <div class="mission">
+                <h3>Our Mission</h3>
+                <p>To provide affordable, sustainable, and high-quality housing solutions while building lasting communities and contributing to the growth of Kenya's real estate sector.</p>
+            </div>
+            <div class="vision">
+                <h3>Our Vision</h3>
+                <p>To be the leading real estate developer in East Africa, known for innovation, quality, and customer satisfaction in creating modern living spaces.</p>
+            </div>
+        </div>
+
+        <!-- Core Values -->
+        <div class="values-section">
+            <h2>Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-item">
+                    <h3>Integrity</h3>
+                    <p>We conduct our business with the highest ethical standards</p>
+                </div>
+                <div class="value-item">
+                    <h3>Innovation</h3>
+                    <p>We embrace new technologies and modern solutions</p>
+                </div>
+                <div class="value-item">
+                    <h3>Quality</h3>
+                    <p>We deliver excellence in every project</p>
+                </div>
+                <div class="value-item">
+                    <h3>Customer Focus</h3>
+                    <p>We prioritize customer satisfaction in all our endeavors</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Section -->
+        <div class="team-section">
+            <h2>Our Leadership Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="Mwangi.jpg.png" alt="CEO">
+                    <h3>Brian Githinji</h3>
+                    <p>Chief Executive Officer</p>
+                </div>
+                <div class="team-member">
+                    <img src="Mwangi.jpg.png" alt="Operations Director">
+                    <h3>Brian Githinji</h3>
+                    <p>Operations Director</p>
+                </div>
+                <div class="team-member">
+                    <img src="Mwangi.jpg.png" alt="Technical Director">
+                    <h3>Brian Githinji</h3>
+                    <p>Technical Director</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
